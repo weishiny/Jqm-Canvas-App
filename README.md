@@ -45,7 +45,7 @@ Please refer to (https://github.com/wbt11a/Canvas2ImagePlugin)
 $("#btnSavePainting").click(function () {
       navigator.notification.confirm("Please make sure you would like to save current version of the picture, original picture will be replaced after the save action occur! \n\n請先確定您是否要儲存此版照片!儲存後,原照片將被取代!", function (buttonindex) {
           if (buttonindex == 1) {              
-              var canvasSourceURL = canvasDrawerApi.savetoURL();
+              var canvasSourceURL = canvasDrawerApi.savetoURL(); //for debugging you can see the base64 format of this image
 
               //... format: jpg   ... quality 50% ...
               window.canvas2ImagePlugin.saveImageDataToLibrary(
